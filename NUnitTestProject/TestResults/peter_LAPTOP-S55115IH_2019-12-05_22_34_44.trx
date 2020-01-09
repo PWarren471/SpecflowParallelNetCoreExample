@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="2c38c718-a140-4260-b841-4d05a2e7671a" name="peter@LAPTOP-S55115IH 2019-12-05 22:34:44" runUser="LAPTOP-S55115IH\peter" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2019-12-05T22:34:44.4980462+00:00" queuing="2019-12-05T22:34:44.4980492+00:00" start="2019-12-05T22:34:37.6995275+00:00" finish="2019-12-05T22:35:06.8294850+00:00" />
+  <TestSettings name="default" id="2e649f1e-4bec-45e2-aaf1-ef0a7b4409b8">
+    <Deployment runDeploymentRoot="peter_LAPTOP-S55115IH_2019-12-05_22_34_44" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="ffb166af-d7ae-45c1-b9d8-ceca26233d21" testId="350811b8-3d4d-c050-3ab5-42eee8ac4c8d" testName="InconclusiveTest" computerName="LAPTOP-S55115IH" duration="00:00:05.5420160" startTime="2019-12-05T22:34:38.0000000+00:00" endTime="2019-12-05T22:34:44.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ffb166af-d7ae-45c1-b9d8-ceca26233d21" />
+    <UnitTestResult executionId="8de23582-2a4d-44e8-96ba-d498c6944ac1" testId="c07e1b6b-7cf8-1197-2b2f-c267e017bd53" testName="LoginUserAsAdministrator" computerName="LAPTOP-S55115IH" duration="00:00:22.3054820" startTime="2019-12-05T22:34:44.0000000+00:00" endTime="2019-12-05T22:35:06.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8de23582-2a4d-44e8-96ba-d498c6944ac1" />
+    <UnitTestResult executionId="a3a8636c-e29f-42ce-9826-2521476c4908" testId="2ef69749-d64e-2721-ad6b-743b1706bded" testName="UserDetailsFormEntryVerification" computerName="LAPTOP-S55115IH" duration="00:00:25.4381040" startTime="2019-12-05T22:34:38.0000000+00:00" endTime="2019-12-05T22:35:04.0000000+00:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3a8636c-e29f-42ce-9826-2521476c4908">
+      <Output>
+        <StdOut>#15: Given I navigate to application&#xD;
+#19: Then The test is marked as inconclusive&#xD;
+-&gt; #19: error: &#xD;
+-&gt; #15: done: LoginSteps.GivenINavigateToApplication() (1.0s)&#xD;
+#15: And I enter username admin and password admin&#xD;
+-&gt; #15: done: LoginSteps.GivenIEnterUsernameAndPassword("admin", "admin") (0.2s)&#xD;
+#15: And I click login&#xD;
+#19: Given I navigate to application&#xD;
+-&gt; #19: done: LoginSteps.GivenINavigateToApplication() (0.8s)&#xD;
+#19: And I enter username admin and password admin&#xD;
+-&gt; #19: done: LoginSteps.GivenIEnterUsernameAndPassword("admin", "admin") (0.1s)&#xD;
+#19: And I click login&#xD;
+-&gt; #15: done: LoginSteps.GivenIClickLogin() (15.5s)&#xD;
+#15: And I start entering user form details with initial k first name Karthik and middle name k&#xD;
+-&gt; #15: done: UserFormSteps.GivenIStartEnteringUserFormDetailsLike("k", "Karthik", "k") (3.3s)&#xD;
+#15: And I click submit button&#xD;
+-&gt; #15: done: UserFormSteps.GivenIClickSubmitButton() (0.1s)</StdOut>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="LoginUserAsAdministrator" storage="c:\users\peter\source\repos\nunittestsolution\nunittestproject\bin\debug\netcoreapp3.1\nunittestproject.dll" id="c07e1b6b-7cf8-1197-2b2f-c267e017bd53">
+      <Execution id="8de23582-2a4d-44e8-96ba-d498c6944ac1" />
+      <TestMethod codeBase="C:\Users\peter\source\repos\NUnitTestSolution\NUnitTestProject\bin\Debug\netcoreapp3.1\NUnitTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitTestProject.Features.LoginFeature" name="LoginUserAsAdministrator" />
+    </UnitTest>
+    <UnitTest name="UserDetailsFormEntryVerification" storage="c:\users\peter\source\repos\nunittestsolution\nunittestproject\bin\debug\netcoreapp3.1\nunittestproject.dll" id="2ef69749-d64e-2721-ad6b-743b1706bded">
+      <Execution id="a3a8636c-e29f-42ce-9826-2521476c4908" />
+      <TestMethod codeBase="C:\Users\peter\source\repos\NUnitTestSolution\NUnitTestProject\bin\Debug\netcoreapp3.1\NUnitTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitTestProject.Features.UserFormFeature" name="UserDetailsFormEntryVerification" />
+    </UnitTest>
+    <UnitTest name="InconclusiveTest" storage="c:\users\peter\source\repos\nunittestsolution\nunittestproject\bin\debug\netcoreapp3.1\nunittestproject.dll" id="350811b8-3d4d-c050-3ab5-42eee8ac4c8d">
+      <Execution id="ffb166af-d7ae-45c1-b9d8-ceca26233d21" />
+      <TestMethod codeBase="C:\Users\peter\source\repos\NUnitTestSolution\NUnitTestProject\bin\Debug\netcoreapp3.1\NUnitTestProject.dll" adapterTypeName="executor://nunit3testexecutor/" className="NUnitTestProject.Features.LoginFeature" name="InconclusiveTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="350811b8-3d4d-c050-3ab5-42eee8ac4c8d" executionId="ffb166af-d7ae-45c1-b9d8-ceca26233d21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c07e1b6b-7cf8-1197-2b2f-c267e017bd53" executionId="8de23582-2a4d-44e8-96ba-d498c6944ac1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ef69749-d64e-2721-ad6b-743b1706bded" executionId="a3a8636c-e29f-42ce-9826-2521476c4908" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="2" passed="2" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>NUnit Adapter 3.15.1.0: Test execution started&#xD;
+Running all tests in C:\Users\peter\source\repos\NUnitTestSolution\NUnitTestProject\bin\Debug\netcoreapp3.1\NUnitTestProject.dll&#xD;
+   NUnit3TestExecutor converted 3 of 3 NUnit test cases&#xD;
+NUnit Adapter 3.15.1.0: Test execution complete&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>
